@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback System</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Feedback Form</h2>
+    <form id="feedbackForm">
+      <input type="text" id="username" placeholder="Your Name" required />
+      <textarea id="feedback" placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="toast" class="toast">Feedback Submitted!</div>
+
+    <hr />
+    <h3>Submitted Feedbacks</h3>
+    <button onclick="exportToCSV()">Export to CSV</button>
+    <ul id="feedbackList"></ul>
+  </div>
+
+  <script src="Index.js"></script>
+</body>
+</html>
